@@ -14,11 +14,10 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
   var userChoice = window.prompt("How many characters would you like the password to be?");
-  var length = 12
   var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYX0123456789!@#$%^&*()";
   var password = "";
-  for (var i = 0; i <= chars.length; i++) {
-    password += chars.charAt(Math.floor(Math.random() * n));
+  for (var i = 0; i <= userChoice; i++) {
+    password += chars.charAt(Math.random() * n);
   };
   return password;
 }
