@@ -17,7 +17,7 @@ function generatePassword(){
   var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYX0123456789!@#$%^&*()";
   var password = "";
   for (var i = 0; i <= userChoice; i++) {
-    password += chars.charAt(Math.random() * n);
+    password += chars(Math.random() * n);
   };
   return password;
 }
